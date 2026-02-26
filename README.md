@@ -54,3 +54,57 @@ The project demonstrates the practical use of Machine Learning in career analyti
 ---
 
 ## 📂 Project Structure
+
+career_path_forecasting/
+│
+├── Backend/
+│ ├── app.py
+│ ├── model.pkl
+│ ├── scaler.pkl
+│ ├── columns.pkl
+│ ├── templates/
+│ ├── static/
+│
+├── train_model.ipynb
+├── requirements.txt
+├── README.md
+
+
+## ⚙️ How to Run the Project
+
+### 1️⃣ Clone the Repository
+
+
+git clone https://github.com/your-username/your-repo-name.git
+
+cd your-repo-name
+
+
+### 2️⃣ Install Dependencies
+
+
+pip install -r requirements.txt
+
+
+### 3️⃣ Run the Application
+
+
+python app.py
+
+
+
+## 👨‍💻 Author
+
+**Maneedeep Mangapoti**  
+B.Tech Computer Science  
+AI & Full Stack Enthusiast  
+# Author 2
+Rajaulla
+B.Tech Computer Science
+AI & Full Stack Enthusiast 
+
+---
+
+## ⭐ If you like this project
+
+Give it a ⭐ on GitHub!
