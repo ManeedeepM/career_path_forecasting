@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Career Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+    <h2>Career Prediction</h2>
+
+    <form method="POST">
+
+        <label>Target Role</label>
+        <select name="target_role" required>
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="Data Scientist">Data Scientist</option>
+            <option value="AI Engineer">AI Engineer</option>
+            <option value="Cyber Security Analyst">Cyber Security Analyst</option>
+        </select>
+
+        <input name="rank" placeholder="University Rank" required>
+        <input name="gpa" placeholder="GPA" required>
+        <input name="internships" placeholder="Internships Completed" required>
+        <input name="projects" placeholder="Projects Completed" required>
+        <input name="skills" placeholder="Skills Score (1-10)" required>
+        <input name="offers" placeholder="Job Offers" required>
+
+        <button type="submit">Predict</button>
+    </form>
+</div>
+
+</body>
+</html>

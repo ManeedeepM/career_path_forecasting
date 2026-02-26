@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+    <h2>Prediction History</h2>
+
+    <table>
+        <tr>
+            <th>Result</th>
+            <th>Probability</th>
+            <th>Date</th>
+            <th>Delete</th>
+        </tr>
+
+        {% for row in records %}
+        <tr>
+            <td>{{ row.result }}</td>
+            <td>{{ row.probability }}%</td>
+            <td>{{ row.date }}</td>
+            <td><a href="/delete/{{ row.id }}">Delete</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="/dashboard"><button>Back</button></a>
+</div>
+
+</body>
+</html>
